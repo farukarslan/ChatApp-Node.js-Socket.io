@@ -1,8 +1,8 @@
 # ChatApp-Node.js-Socket.io
 Real time chat application with anonymous chat rooms and private message among users. 
-  -You can change the color of your messages.
-  -You can start private messaging by clicking one of the online users section.
-  -You don't have to login just enter your name and have a conversation.
+ - #### You can change the color of your messages.
+ - #### You can start private messaging by clicking one of the online users section.
+ - #### You don't have to login just enter your name and have a conversation.
 
 ---
 ## Requirements
