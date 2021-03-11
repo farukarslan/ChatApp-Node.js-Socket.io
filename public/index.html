@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Websockets</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<div id="anaoda">
+		<h2 class="basliklar">Online Odalar</h2>
+		<div id="odalar">
+		</div>
+	</div>
+	<div id="anadiv">
+		<h2 style="color: #575ed8;margin-left: 10px;">Sohbet Odası
+			<div style="float: right;margin-right: 10px;">
+				<div class="renk" id="siyah"></div>
+				<div class="renk" id="mavi"></div>
+				<div class="renk" id="yesil"></div>
+				<div class="renk" id="kirmizi"></div>
+				<div class="renk" id="sari"></div>
+			</div>
+		</h2>
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<div id="cikti"></div>
+				<div id="feedback"></div>
+			</div>
+		</div>
+		<!--TAB-->
+		<ul class="nav nav-tabs" id="tabmenu">
+			<li id="genel" class="active"><a href="#home" data-toggle="tab">Genel</a></li>
+		</ul>
+		<!--TAB-->
+		<input id="mesaj" type="text" placeholder="Mesaj"/>
+		<button id="gonder">Gönder</button>
+	</div>
+	<div id="liste">
+		<h2 class="basliklar">Online Kullanıcılar<div  id="users" style="float: right"></div></h2>
+		<div id="kullanicilar">
+		</div>
+	</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/lodash.js" type="text/javascript"></script>
+<script src="/chat.js"></script>
+</html>
