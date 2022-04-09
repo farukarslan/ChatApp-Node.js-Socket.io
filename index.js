@@ -80,7 +80,6 @@ io.on('connection',function(socket){
 	//ÖZEL MESAJ
 	socket.on('ozelmesaj', function(data){
 		var a = _.find(kullanicilar,{userid:data.id});
-		//console.log('bilmemne_________________________________:::::::',a);
 		console.log('id datası:',data.id);
 		a.socket.emit('privatemessage',{
 			msj:data.msj,
